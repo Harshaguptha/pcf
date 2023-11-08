@@ -13,5 +13,6 @@ do
     git checkout $BRANCH;
     git cherry-pick $CHERRYCOMMIT;
     git checkout $ORIGINALBRANCH;
+    git push $BRANCH;
     git stash pop;
 done
